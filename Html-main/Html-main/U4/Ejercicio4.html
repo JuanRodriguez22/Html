@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Backpacks</title>
+</head>
+<body>
+    <form action="ejemplo.php" method="get">
+        <div class="form-control">
+            <h1>Formulario de cotizaciones</h1>
+            <p>
+                <label for="nombre" class="colocar_nombre">
+                    Nombre
+                    <span class="obligatorio">*</span>
+                </label>
+                <input type="text" name="introducir_nombre" id="nombre" required placeholder="Escribe tu nombre">
+            </p>
+        </div>
+
+        <div class="form-control">
+            <p>
+                <label for="email" class="colocar_email">
+                    Email
+                    <span class="obligatorio">*</span>
+                </label>
+                <input type="email" name="introducir_email" id="email" required placeholder="Escribe tu Email">
+            </p>
+        </div>
+
+        <div class="form-control">
+            <p>
+                <label for="telefono" class="colocar_telefono">
+                    Celular
+                    <span class="obligatorio">*</span>
+                </label>
+                <input type="tel" name="introducir_telefono" id="tel" required placeholder="Escribe tu telefono">
+            </p>
+        </div>
+
+        <div class="form-control">
+            <p>
+                <label for="mensaje" class="colocar_mensaje">
+                    Producto/Servicio a cotizar
+                    <span class="obligatorio">*</span><br />
+                </label>
+                <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required placeholder="Deja aquí tu comentario..."></textarea>
+            </p>
+        </div>
+        <input type="submit" value="Enviar" class="submit-btn" />
+
+    </form>
+</body>
+</html>

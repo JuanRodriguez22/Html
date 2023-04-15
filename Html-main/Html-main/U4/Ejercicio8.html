@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Suscription S.A de C.V</title>
+</head>
+<body>
+    <form action="ejemplo.php" method="get">
+        <div class="form-control">
+            <h1>Datos para suscripcion</h1>
+            <p>
+                <label for="nombre" class="colocar_nombre">
+                    Nombre
+                    <span class="obligatorio">*</span>
+                </label>
+                <input type="text" name="introducir_nombre" id="nombre" required placeholder="Escribe tu nombre">
+            </p>
+        </div>
+
+        <div class="form-control">
+            <p>
+                <label for="email" class="colocar_email">
+                    Email
+                    <span class="obligatorio">*</span>
+                </label>
+                <input type="email" name="introducir_email" id="email" required placeholder="Escribe tu Email">
+            </p>
+        </div>
+
+        <div class="form-control">
+            <p>
+                <label for="suscripcion" class="colocar_suscripcion">
+                    Elige el tipo de suscripcion
+                    <span class="obligatorio">*</span>
+                </label>
+                <select>
+                    <option>Elige una suscripcion</option>
+                    <option>Básico. $5.99/mes</option>
+                    <option>Premium. $7.99/mes</option>
+                    <option>Gold. $9.99/mes</option>
+                    <option>Platinum. $14.99/mes</option>
+                </select>
+            </p>
+        </div>
+        <input type="submit" value="Enviar" class="submit-btn" />
+
+    </form>
+</body>
+</html>
