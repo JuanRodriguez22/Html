@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Research</title>
+</head>
+<body>
+    <form action="ejemplo.php" method="get">
+        <div class="form-control">
+            <h1>Datos para reservación</h1>
+            <p>
+                <label for="nombre" class="colocar_nombre">
+                    Nombre
+                    <span class="obligatorio">*</span>
+                </label>
+                <input type="text" name="introducir_nombre" id="nombre" required placeholder="Escribe tu nombre">
+            </p>
+        </div>
+
+        <div class="form-control">
+            <p>
+                <label for="email" class="colocar_email">
+                    Email
+                    <span class="obligatorio">*</span>
+                </label>
+                <input type="email" name="introducir_email" id="email" required placeholder="Escribe tu Email">
+            </p>
+        </div>
+
+        <div class="form-control">
+            <p>
+                <label for="telefono" class="colocar_telefono">
+                    Celular
+                    <span class="obligatorio">*</span>
+                </label>
+                <input type="tel" name="introducir_telefono" id="tel" required maxlength="10" placeholder="Escribe tu telefono" ondrop="return false;" onpaste="return false;"
+onkeypress="return event.charCode>=48 && event.charCode<=57">
+            </p>
+        </div>
+
+        <div class="form-control">  
+            <p>
+                <label for="fecha" class="colocar_fecha">
+                    Fecha y hora para la reservación
+                    <span class="obligatorio">*</span><br />
+                </label>
+                <input type="datetime-local" name="introducir_fecha" id="fecha" required>
+            </p>
+        </div>
+
+        <div class="form-control">
+            <p>
+                <label for="personas" class="colocar_personas">
+                    Numero de personas
+                    <span class="obligatorio">*</span>
+                </label>
+                <input type="number" name="personas" id="numero_personas "min="1" required>
+            </p>
+        </div>
+
+        <input type="submit" value="Enviar" class="submit-btn" />
+
+    </form>
+</body>
+</html>
